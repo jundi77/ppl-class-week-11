@@ -75,7 +75,7 @@
 
         public function __construct($ownerName)
         {
-            $this->$ownerName = $ownerName;
+            $this->ownerName = $ownerName;
 
             $this->AddTopping(new MozzarellaTopping("Underdog Monster"));
             $this->AddTopping(new CheeseTopping("Alerun Special"));
@@ -96,9 +96,9 @@
         public function Serve() {
             $content = "Italian Pizza for " . $this->ownerName . " with ";
             for ($i = 0; $i < count($this->toppings) - 1; $i++) {
-                $content .= $this->toppings[$i]->brand . " ";
+                $content .= $this->toppings[$i]->brand . ", ";
             }
-            $content .= $this->toppings[count($this->toppings) - 1]->brand;
+            $content .= "and " . $this->toppings[count($this->toppings) - 1]->brand;
             $content .= " ready to serve!\n";
 
             echo ($content);
@@ -112,7 +112,7 @@
 
         public function __construct($ownerName)
         {
-            $this->$ownerName = $ownerName;
+            $this->ownerName = $ownerName;
 
             $this->AddTopping(new BeefTopping("Sapi Halal"));
             $this->AddTopping(new MushroomTopping("Jamur Kemantu Special"));
@@ -132,11 +132,11 @@
         }
 
         public function Serve() {
-            $content = "Italian Pizza for " . $this->ownerName . " with ";
+            $content = "Combo Kenyang Pizza for " . $this->ownerName . " with ";
             for ($i = 0; $i < count($this->toppings) - 1; $i++) {
-                $content .= $this->toppings[$i]->brand . " ";
+                $content .= $this->toppings[$i]->brand . ", ";
             }
-            $content .= $this->toppings[count($this->toppings) - 1]->brand;
+            $content .= "and " . $this->toppings[count($this->toppings) - 1]->brand;
             $content .= " ready to serve!\n";
 
             echo ($content);
