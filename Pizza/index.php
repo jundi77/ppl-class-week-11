@@ -148,7 +148,7 @@
     $artemisPizza = new ItalianPizza("Artemis");
     $handalPizza = new ComboKenyangPizza("Handal");
 
-    echo("Welcome to PizzaHunt!!\n\nHere we go!!\n\n");
+    echo("\nWelcome to PizzaHunt!!\nHere we go!!\n\n");
 
     $rumbertPizza->Prepare();
     $rumbertPizza->Serve();
@@ -163,5 +163,4 @@
     $handalPizza->Prepare();
     $handalPizza->Serve();
 
-    echo "\n";
 ?>
