@@ -13,7 +13,7 @@ class Chicken extends TwoLegsAnimal implements AnimalOviparInterface {
     }
 
     public function jump($distance, $height, $direction) {
-        echo "Chicken " . $this->get_name() . " is jumping to " . $direction ." for distance ". $distance ." at attitude .\n";
+        echo "Chicken " . $this->get_name() . " is jumping to " . $direction ." for distance ". $distance ." at attitude $height.\n";
     }
 
     public function layEggs() {

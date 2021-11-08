@@ -11,9 +11,9 @@ for ($i=0; $i < 5; $i++) {
 }
 
 for ($i=0; $i < 5; $i++) { 
-    echo($chicken[i]->walk(23,"front"));
-    echo($chicken[i]->jump(23, 2, "front"));
-    echo($sheep[i]->walk(23,"left"));
+    echo($chicken[$i]->walk(23,"front"));
+    echo($chicken[$i]->jump(23, 2, "front"));
+    echo($sheep[$i]->walk(23,"left"));
 }
 
 
